@@ -1,14 +1,26 @@
 {
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": "tsconfig.json"
+    "project": "tsconfig.json",
+    "ecmaFeatures": {
+      "jsx": true
+    }
   },
   "plugins": ["@typescript-eslint"],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
     "prettier",
     "prettier/@typescript-eslint"
-  ]
+  ],
+  "rules": {
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "react/prop-types": "off",
+    // in Next.js we use jsx without importing React in each file
+    // this will turn off that required rule
+    "react/react-in-jsx-scope": "off"
+  }
 }
