@@ -4,8 +4,9 @@ module.exports = {
     '**/*.{js,jsx,ts,tsx}',
     '!**/*.d.ts',
     '!**/node_modules/**',
+    '!**/cypress/**',
   ],
-  setupFilesAfterEnv: ['<rootDir>/setupTests.js'],
+  setupFilesAfterEnv: ['<rootDir>/setupTests.ts'],
   moduleFileExtensions: ['js', 'ts', 'tsx', 'json', 'css', 'scss'],
   preset: 'ts-jest/presets/js-with-ts',
   // https://github.com/zeit/next.js/issues/8663#issue-490553899
@@ -17,7 +18,7 @@ module.exports = {
       tsConfig: '<rootDir>/tsconfig.jest.json',
     },
   },
-  testPathIgnorePatterns: ['/node_modules/', '/.next/'],
+  testPathIgnorePatterns: ['/node_modules/', '/.next/', '/cypress/'],
   transformIgnorePatterns: [
     '/node_modules/',
     '[/\\\\]node_modules[/\\\\].+\\.(ts|tsx)$',
@@ -28,7 +29,7 @@ module.exports = {
   },
   moduleNameMapper: {
     '.(css|less|sass|scss)$': 'identity-obj-proxy',
-    '\\.(gif|ttf|eot|svg|png)$': '<rootDir>/test/__mocks__/fileMock.js',
+    '\\.(gif|ttf|eot|svg|png)$': '<rootDir>/test/__mocks__/fileMock.ts',
   },
   testEnvironment: 'jsdom',
 };

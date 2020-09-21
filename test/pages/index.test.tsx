@@ -1,10 +1,11 @@
 import React from 'react';
 import { render, fireEvent } from '../testUtils';
 import Home from '../../pages/index';
+import { RenderResult } from '@testing-library/react';
 
 describe('Home Page', () => {
   it('matches snapshot', () => {
-    const { asFragment } = render(<Home />, {});
+    const { asFragment }: RenderResult = render(<Home />, {});
     expect(asFragment()).toMatchSnapshot();
   });
 
