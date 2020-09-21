@@ -18,9 +18,17 @@
   ],
   "rules": {
     "@typescript-eslint/explicit-function-return-type": "off",
+    // we are using typescript, so we don't need this rule
     "react/prop-types": "off",
+    "react/display-name": "off",
     // in Next.js we use jsx without importing React in each file
     // this will turn off that required rule
     "react/react-in-jsx-scope": "off"
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "jest": true,
+    "node": true
   }
 }

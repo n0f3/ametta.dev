@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Page matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <header
+      class="header"
+    >
+      <img
+        alt="[Your Name]"
+        class="headerHomeImage borderCircle"
+        src="/images/profile.jpg"
+      />
+      <h1
+        class="heading2Xl"
+      >
+        [Your Name]
+      </h1>
+    </header>
+    <main>
+      <section
+        class="headingMd"
+      >
+        <p>
+          [Your Self Introduction]
+        </p>
+        <p>
+          (This is a sample website - you’ll be building a site like this in 
+          <a
+            href="https://nextjs.org/learn"
+          >
+            our Next.js tutorial
+          </a>
+          .)
+        </p>
+      </section>
+      <section
+        class="headingMd padding1px"
+      >
+        <h2
+          class="headingLg"
+        >
+          Blog
+        </h2>
+        <ul
+          class="list"
+        />
+      </section>
+    </main>
+  </div>
+</DocumentFragment>
+`;
