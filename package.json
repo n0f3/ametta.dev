@@ -10,7 +10,9 @@
     "format": "prettier --write \"**/*.{js,ts,tsx}\"",
     "lint": "eslint . --ext ts --ext tsx --ext js",
     "test": "jest",
-    "test-all": "npm lint && npm run type-check && npm test"
+    "test-all": "npm lint && npm run type-check && npm test",
+    "e2e": "cypress run",
+    "e2e:browser": "cypress open"
   },
   "husky": {
     "hooks": {
@@ -20,7 +22,6 @@
   },
   "lint-staged": {
     "*.@(ts|tsx)": [
-      "npm run lint",
       "npm run format"
     ]
   },
@@ -42,6 +43,7 @@
     "@typescript-eslint/eslint-plugin": "^4.1.1",
     "@typescript-eslint/parser": "^4.1.1",
     "babel-jest": "^26.3.0",
+    "cypress": "^5.2.0",
     "eslint": "^7.9.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-jsx-a11y": "^6.3.1",
