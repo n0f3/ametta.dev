@@ -1,0 +1,16 @@
+@tailwind base;
+
+@layer base {
+  html,
+  body {
+    @apply bg-dracula-background;
+    color: theme('colors.dracula-foreground');
+  }
+}
+
+@tailwind components;
+
+/* custom components styles here */
+@tailwind utilities;
+
+/* Custom utilities here */
