@@ -22,14 +22,14 @@ const Home = ({ allPostsData }: HomeProps): JSX.Element => {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>[Your Self Introduction]</p>
+      <section className="self-center w-1/2 text-left">
         <p>
-          (This is a sample website - you’ll be building a site like this in{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
+          Hi, my name is Alessandro Metta. I am a Full Stack Engineer from San
+          Francisco, CA. <br /> <br /> I have extensive experience developing
+          application for web, mobile, games and AR. Nice to meet you!
         </p>
       </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+      {/* <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
           {allPostsData?.map(({ id, date, title }) => (
@@ -44,7 +44,7 @@ const Home = ({ allPostsData }: HomeProps): JSX.Element => {
             </li>
           ))}
         </ul>
-      </section>
+      </section> */}
     </Layout>
   );
 };

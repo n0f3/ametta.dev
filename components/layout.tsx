@@ -14,7 +14,7 @@ export default function Layout({
   home?: boolean;
 }): JSX.Element {
   return (
-    <div className={styles.container}>
+    <div className="container mx-auto flex flex-col justify-center items-center h-screen">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -59,7 +59,9 @@ export default function Layout({
           </>
         )}
       </header>
-      <main>{children}</main>
+      <main className="flex justify-center align-center flex-col half-width">
+        {children}
+      </main>
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">
