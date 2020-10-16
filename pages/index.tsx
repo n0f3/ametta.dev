@@ -23,7 +23,7 @@ const Home = ({ allPostsData }: HomeProps): JSX.Element => {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className="self-center text-left">
+      <section className="self-center text-left px-3">
         <p>
           Hi, my name is
           <div className="text-3xl mt-2">Alessandro Metta</div>{' '}
@@ -33,8 +33,8 @@ const Home = ({ allPostsData }: HomeProps): JSX.Element => {
           <div className="mt-3">
             I have built a wide of variety of applications for web, mobile,
             video games and AR.
-            <br />I currently specialize in creating beautiful experiences for
-            users leveraging modern web technologies.
+            <br />I currently specialize in creating engaging experiences
+            leveraging modern web technologies.
           </div>
         </p>
       </section>
@@ -54,14 +54,14 @@ const Home = ({ allPostsData }: HomeProps): JSX.Element => {
         </Link>
       </section>
 
-      <section className="container mx-auto flex self-center flex-row justify-evenly content-center mt-6 w-1/6">
+      <section className="container mx-auto flex self-center flex-row justify-evenly content-center m-6 w-2/3 md:w-1/4">
         <Link href="https://github.com/n0f3">
-          <a target="_blank">
+          <a target="_blank" className="w-1/6 md:w-1/8 flex-grow-0">
             <FontAwesomeIcon icon={['fab', 'github']} />
           </a>
         </Link>
         <Link href="https://www.linkedin.com/in/alessandrometta/">
-          <a target="_blank" className="ml-5">
+          <a target="_blank" className="ml-5 w-1/6">
             <FontAwesomeIcon
               icon={['fab', 'linkedin']}
               color="rgba(10, 102, 194, 1.00)"
@@ -69,7 +69,7 @@ const Home = ({ allPostsData }: HomeProps): JSX.Element => {
           </a>
         </Link>
         <Link href="https://stackoverflow.com/users/4927930/alessandro-m">
-          <a target="_blank" className="ml-5 bottom-10">
+          <a target="_blank" className="ml-5 bottom-10 inline-block w-1/6">
             <FontAwesomeIcon
               icon={['fab', 'stack-overflow']}
               color="rgba(253, 126, 20, 1.00)"
