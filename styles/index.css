@@ -3,11 +3,8 @@
 @layer base {
   html,
   body {
-    @apply bg-dracula-background;
-    color: theme('colors.dracula-foreground');
   }
   a {
-    color: theme('colors.dracula-green');
   }
 }
 
