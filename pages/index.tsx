@@ -29,6 +29,12 @@ const Home = ({ allPostsData }: HomeProps): JSX.Element => {
           York City. <br /> <br /> I have extensive experience developing
           application for web, mobile, games and AR.
         </p>
+        <Link href="/portfolio">
+          <a>Projects</a>
+        </Link>
+        <Link href="/AlessandroMettaResume.pdf">
+          <a target="_blank">Resume</a>
+        </Link>
       </section>
       <section className="container mx-auto flex self-center flex-row justify-center content-center mt-6 w-2/3">
         <Link href="https://github.com/n0f3">
