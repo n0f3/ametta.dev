@@ -2,6 +2,7 @@
   "name": "learn-starter",
   "version": "0.1.0",
   "private": true,
+  "browserslist": "last 2 versions",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -71,6 +72,7 @@
     "jest": "^26.4.2",
     "lint-staged": "^10.4.0",
     "postcss-flexbugs-fixes": "^4.2.1",
+    "postcss-normalize": "^9.0.0",
     "postcss-preset-env": "^6.7.0",
     "prettier": "2.1.2",
     "ts-jest": "^26.4.0",
